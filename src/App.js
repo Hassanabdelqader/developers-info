@@ -12,7 +12,7 @@ function App() {
   const [info, dispatch] = useReducer(reducer,[]);
   return (
     <div className="App">
-      <h1>Fazwi</h1>
+      <h1>hasan </h1>
       <DeveloperForm dispatch={dispatch} />
 
       <DeveloperList info={info} dispatch={dispatch}  />
