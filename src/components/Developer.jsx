@@ -1,14 +1,13 @@
 export default function reducer(state, action) {
   switch (action.type) {
     case "ADD_DEVELOPER":
-      return [...state, action.payload];
+      return [...state, {
+        ...action.payload,
+        id :state.length +1 
+      }];
     case "REMOVE_DEVELOPER":
-        const arr = state.filter((item) => {
-            return item !== "b"
-        }); 
-        // console.log(arr)
-      return [...arr]
+    return state.filter(item => item.id !==action.id)
     default:
-      throw new Error();
+      return state
   }
 }

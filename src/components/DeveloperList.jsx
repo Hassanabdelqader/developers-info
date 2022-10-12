@@ -1,11 +1,11 @@
 import React, { useReducer } from 'react';
-import reducer from './Developer';
 
 
 function DeveloperList(props) {
+    console.log("Hassan ~ file: DeveloperList.jsx ~ line 10 ~ DeveloperList ~ props.info ", props.info )
 
     return (
-        <div>
+        <div className='tabel1'>
           {props.info &&
               <table border={1}>
               <tbody>
@@ -14,7 +14,7 @@ function DeveloperList(props) {
                   return(
                       <>
                       <tr key={idx} onClick={()=>{
-                            props.dispatch({ type: 'REMOVE_DEVELOPER', item: item.Developer_Name })
+                            props.dispatch({ type: 'REMOVE_DEVELOPER', id: item.id })
                       }}>
 
                       <td>
