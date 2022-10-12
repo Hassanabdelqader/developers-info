@@ -10,6 +10,7 @@ function DeveloperForm(props) {
         const handlesubmit = (e)=>{
             e.preventDefault();
             props.dispatch({ type: 'ADD_DEVELOPER', payload: {
+                
                 Developer_Name,
                 programming_Language,
                 technologies,
