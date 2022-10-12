@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1>powered By Hassan Developeor</h1>
+
       <DeveloperForm dispatch={dispatch} />
 
       <DeveloperList info={info} dispatch={dispatch}  />
